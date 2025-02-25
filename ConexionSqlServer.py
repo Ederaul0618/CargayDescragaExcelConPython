@@ -1,6 +1,6 @@
 
-""" Se importan las librerias necesarias para realizar la carga de datos os
-para que python pueda,interactuar con el sistema operativo, numpy, parse y datetime
+""" Se importan las librerias necesarias para realizar la carga de datos de exceles a sql server ocupando
+python y para que interacte con el sistema operativo se ocupan librerias como numpy, parse y datetime
 para manejar los tipos de datos,pandas para manejar la estructura de los datos, 
 pyodbc para realizar la conexión con las base de datos, schedule y time para programar,
 el horario de carga """
@@ -18,7 +18,7 @@ from dateutil.parser import parse
 # DATABASE indica la base a la que se apunta
 # UID el usuario y PWD la contraseña
 
-connection_string = r'DRIVER={SQL Server};SERVER=LAPTOP-S7GS2OGI\SQLEXPRESS;DATABASE=BASE_BI;UID=sa;PWD=abc123'
+connection_string = r'DRIVER={SQL Server};SERVER=***********;DATABASE=*******I;UID=*****;PWD=****' 
 
 # Se definen las variables;
 # carpeta, la ruta donde se encuentran almacenados los archivos;
@@ -29,7 +29,7 @@ fecha_actual = datetime.now()
 fecha_corregida = fecha_actual  # + timedelta(days=1)
 # Se le da el formato correcto para la cadena de texto ruta_servidor
 fecha_formateada = fecha_corregida.strftime('%Y_%B_%d')
-carpeta = f'C:/Users/Eder Perez Gallardo/Downloads/Descarga_Bi/0.Bi/BI_{
+carpeta = f'C:/Users/Eder Perez Gallardo/Downloads/****/****/BI_{ 
     fecha_formateada}/'
 tabla = 'base_bi_2'
 # Se establece un valor de fecha nula para evitar errores al momento de realizar carga
