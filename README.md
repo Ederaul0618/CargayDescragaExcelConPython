@@ -30,5 +30,21 @@ Además del canal FTP, el sistema también automatiza la descarga de reportes en
 - **SQL Server** (motor de base de datos)
 
 
+## 📌 Casos de uso
+
+- Automatización de reportes operativos semanales.
+- Actualización diaria de bases de datos de ventas o inventario.
+- Integración de datos de portales externos sin intervención humana.
+
+## ⚠ Recomendaciones
+
+- Se recomienda ejecutar los scripts en un entorno controlado o desde un servidor programado con tareas (`cron` o `Task Scheduler`) para garantizar la recurrencia.
+- Las credenciales y rutas deben mantenerse fuera del control de versiones y manejarse con archivos de configuración seguros.
+
+---
+
+Este sistema permite **transformar procesos lentos y propensos a errores en flujos automatizados, confiables y auditables**, incrementando así la productividad del equipo de análisis o inteligencia de negocio.
+
+
 
 
